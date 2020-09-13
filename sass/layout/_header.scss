@@ -1,0 +1,41 @@
+.background-1{
+    background-image: url("../../img/The-best-top-desktop-hd-dark-black-wallpapers-dark-black-wallpaper-dark-background-dark-wallpaper-25.jpg");
+    background-size: cover;
+    z-index: -1;
+    height: 100vh;
+    width: 200vh;
+    margin: 0 auto;
+    display: block;
+}
+
+.navigation{
+    padding: 4rem 10rem !important;
+    font-size: 1.5rem;
+    color: $color-light;
+    text-transform: uppercase;
+    font-family: $font-general;
+}
+
+.moreInformation{
+    justify-content: flex-end;
+    padding-left: 25rem !important ;
+}
+
+.border{
+    background-color: white;
+    height: .05rem;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.homepage{
+    padding-top: 20%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    color: $color-light;
+    font-family: $font-general;
+    font-size: 7rem;    
+}

@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+html, body {
+  position: relative; }
+
+html {
+  font-size: 10px;
+  display: inline-block; }
+
+body {
+  box-sizing: border-box;
+  letter-spacing: 0px;
+  font-size: "Merriweather", serif;
+  font-weight: 400;
+  line-height: 1.7;
+  font-size: 1.6rem; }
+
+::selection {
+  background: #d3d3d3;
+  color: #555; }
+
+::-moz-selection {
+  background: #d3d3d3;
+  color: #555; }
+
+::-webkit-selection {
+  background: #d3d3d3;
+  color: #555; }
+
+.background-1 {
+  background-image: url("../../img/The-best-top-desktop-hd-dark-black-wallpapers-dark-black-wallpaper-dark-background-dark-wallpaper-25.jpg");
+  background-size: cover;
+  z-index: -1;
+  height: 100vh;
+  width: 200vh;
+  margin: 0 auto;
+  display: block; }
+
+.navigation {
+  padding: 4rem 10rem !important;
+  font-size: 1.5rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: "Merriweather", serif; }
+
+.moreInformation {
+  justify-content: flex-end;
+  padding-left: 25rem !important; }
+
+.border {
+  background-color: white;
+  height: .05rem;
+  width: 80%;
+  margin-left: 10%; }
+
+.homepage {
+  padding-top: 20%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Merriweather", serif;
+  font-size: 7rem; }
+
+.button {
+  text-align: center;
+  margin-top: -15rem; }
+
+.btn {
+  text-transform: uppercase;
+  font-family: "Merriweather", serif;
+  font-size: 2rem !important;
+  color: #404040;
+  background-color: white !important;
+  border-radius: 2rem !important;
+  height: 4.6rem;
+  width: 26rem; }
+
+.logo {
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+  display: block;
+  margin-top: -2rem;
+  margin-bottom: 3rem; }

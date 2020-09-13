@@ -1,0 +1,32 @@
+// Chứa các khởi tạo ban đầu của các elements, như *, body,..
+
+
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html,body{
+    position: relative;
+}
+
+html {
+    font-size: 10px;
+    display: inline-block;
+}
+
+body {
+    box-sizing: border-box;
+    letter-spacing: 0px;
+    font-size: $font-general;
+    font-weight: 400;
+    line-height: 1.7;
+    font-size: 1.6rem;
+}
+
+

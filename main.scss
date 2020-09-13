@@ -1,0 +1,25 @@
+@import './sass/abstracts/variables';
+@import './sass/abstracts/functions';
+@import './sass/abstracts/mixins';
+
+// Import library from node_modules
+@import './sass/base/base';
+@import './sass/base/fonts';
+@import './sass/base/animation';
+
+@import './sass/layout/grid';
+@import './sass/layout/header';
+@import './sass/layout/footer';
+@import './sass/layout/navigation';
+@import './sass/layout/slidebar';
+@import './sass/layout/forms';
+
+@import './sass/components/buttons';
+@import './sass/components/tabs';
+@import './sass/components/slider';
+@import './sass/components/logo';
+
+@import './sass/pages/home';
+@import './sass/pages/about';
+@import './sass/pages/contact';
+@import './sass/base/utilities';
