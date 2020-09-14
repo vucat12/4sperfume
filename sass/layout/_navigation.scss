@@ -1,0 +1,32 @@
+.navigation{
+    padding: 4rem 10rem !important;
+    font-size: 1.5rem;
+    color: $color-light;
+    text-transform: uppercase;
+    font-family: $font-general;
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    &__item{
+        &--left{
+            text-align: left;
+        }
+        &--center{
+            text-align: center;
+        }
+        &--right{
+            text-align: right;
+        }
+    }
+    &__border{
+        background-color: white;
+        height: .05rem;
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+.moreInformation{
+
+}
