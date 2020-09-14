@@ -8,6 +8,7 @@
     margin: 0 auto;
     top: 0;
     width: 100%;
+    z-index: 100000;
     &__item{
         &--left{
             text-align: left;
@@ -25,8 +26,4 @@
         width: 85%;
         margin: 0 auto;
     }
-}
-
-.moreInformation{
-
 }
