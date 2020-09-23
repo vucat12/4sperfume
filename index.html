@@ -13,6 +13,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <title>4SPerfume</title>
 </head>
 
@@ -33,7 +34,7 @@
         </div>
         <div class="navigation__border"></div>
     </div>
-    <div class="container-fluid header">
+    <div id="header" class="container-fluid header">
         <div class="box">
             <h2 class="heading-primary">
                 4SPerfume
@@ -43,7 +44,7 @@
             </a>
         </div>
     </div>
-    <div class="section-about ">
+    <div id="section-about" class="section-about">
         <video id="video_background" preload="auto" autoplay="true" loop="loop" muted volume="0">
             <source src="./img/video.mp4" type="video/webm" />
         </video>
@@ -53,10 +54,10 @@
             </h2>
             <a href="#" class="button button--big">
                 <span class="button__label">Submeter</span>
-              </a>
+            </a>
         </div>
     </div>
-    <div class="section-contact">
+    <div id="section-contact" class="section-contact">
         <video id="video_background" preload="auto" autoplay="true" loop="loop" muted volume="0">
             <source src="./img/video.mp4" type="video/webm" />
         </video>
@@ -66,10 +67,77 @@
             </h2>
             <a href="#" class="button button--big">
                 <span class="button__label">Submeter</span>
-              </a>
+            </a>
         </div>
     </div>
-  
+    <div id="section-introduce" class="section-introduce">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card-description">
+                        <img class="card-description__img" src="./img/Capture.PNG" alt="rollRoyce">
+                        <h4 class="card-description__title">4SPerfume</h4>
+                        <p class="card-description__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam esse commodi rem!
+                            Assumenda
+                            laborum hic, ipsam sapiente, possimus alias earum fugiat consequatur omnis, culpa molestiae
+                            error ut est sint ipsa.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card-description">
+                        <img class="card-description__img" src="./img/Capture.PNG" alt="rollRoyce">
+                        <h4 class="card-description__title">4SPerfume</h4>
+                        <p class="card-description__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam esse commodi rem!
+                            Assumenda
+                            laborum hic, ipsam sapiente, possimus alias earum fugiat consequatur omnis, culpa molestiae
+                            error ut est sint ipsa.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card-description">
+                        <img class="card-description__img" src="./img/Capture.PNG" alt="rollRoyce">
+                        <h4 class="card-description__title">4SPerfume</h4>
+                        <p class="card-description__text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam esse commodi rem!
+                            Assumenda
+                            laborum hic, ipsam sapiente, possimus alias earum fugiat consequatur omnis, culpa molestiae
+                            error ut est sint ipsa.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-introduce__button">
+            <a href="#" class="button button--big">
+                <span class="button__label">Submeter</span>
+            </a>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer__top">
+            <div class="footer__top__bg footer__top__bg--one">
+            </div>
+            <div class="footer__top__bg footer__top__bg--two">
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p>thank you for watching</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p>from 4SPerfume with love</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="./js/home.js"></script>
 
 </html>

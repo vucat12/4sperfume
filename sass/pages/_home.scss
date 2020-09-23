@@ -7,6 +7,7 @@
     position: relative;
     height: 100vh;
 }
+
 #video_background {
     position: absolute;
     bottom: 0px;
@@ -15,4 +16,16 @@
     height: auto;
     z-index: -1000;
     overflow: hidden;
+}
+
+.section-introduce{
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    margin-left: 8%;
+    margin-right: 8%;
+    &__button{
+        display: block;
+        margin: 4.6rem auto 0;
+        text-align: center;
     }
+}
