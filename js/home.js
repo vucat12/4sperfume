@@ -6,6 +6,7 @@ window.addEventListener("scroll",function(){
 
 const openMenu = document.getElementById("menu");
 openMenu.addEventListener("click", function(){
-    let backgroundOfMenu = document.getElementById("backgroundOfMenu");
+    var backgroundOfMenu = document.getElementById("backgroundOfMenu");
+    backgroundOfMenu.style.opacity = "1";
 })
 
