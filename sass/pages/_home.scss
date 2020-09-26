@@ -1,22 +1,20 @@
 .section-about {
     position: relative;
     height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+    z-index: 100;
 }
 
 .section-contact {
     position: relative;
     height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
 }
 
-#video_background {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
-    width: 100%;
-    height: auto;
-    z-index: -1000;
-    overflow: hidden;
-}
 
 .section-introduce{
     margin-top: 20vh;
@@ -28,4 +26,6 @@
         margin: 4.6rem auto 0;
         text-align: center;
     }
+    scroll-snap-align: start;
+    padding: 5% 0;
 }

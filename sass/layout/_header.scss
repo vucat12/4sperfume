@@ -1,9 +1,13 @@
 .header{
     background-image: url("../../img/The-best-top-desktop-hd-dark-black-wallpapers-dark-black-wallpaper-dark-background-dark-wallpaper-25.jpg");
     background-size: cover;
-    height: 100vh;
     margin: 0 auto;
     display: block;
     position: relative;
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+    z-index: 1000;
 }
 
