@@ -117,6 +117,36 @@ body {
     height: .05rem;
     width: 85%;
     margin: 0 auto; }
+  .navigation__menu__icon {
+    position: relative; }
+    .navigation__menu__icon, .navigation__menu__icon::before, .navigation__menu__icon::after {
+      width: 1.6rem;
+      height: 0.2rem;
+      background-color: #FFFFFF;
+      display: inline-block; }
+    .navigation__menu__icon::before, .navigation__menu__icon::after {
+      content: "";
+      position: absolute;
+      left: 0; }
+    .navigation__menu__icon::before {
+      top: -0.5rem; }
+    .navigation__menu__icon {
+      top: -0.5rem; }
+    .navigation__menu__icon::after {
+      top: 0.5rem; }
+  .navigation__menu__button {
+    cursor: pointer; }
+  .navigation__menu__item {
+    list-style: none; }
+  .navigation__menu__background {
+    position: relative;
+    background-color: red;
+    width: 100vh;
+    height: 100vh;
+    float: left;
+    z-index: 1000;
+    opacity: 0;
+    text-align: center; }
 
 .button {
   background: #FFFFFF;

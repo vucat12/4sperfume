@@ -1,4 +1,4 @@
-.navigation{
+.navigation {
     padding: 4rem 10rem !important;
     font-size: 1.5rem;
     color: $color-light;
@@ -9,21 +9,78 @@
     top: 0;
     width: 100%;
     z-index: 100000;
-    &__item{
-        &--left{
+
+    &__item {
+        &--left {
             text-align: left;
         }
-        &--center{
+
+        &--center {
             text-align: center;
         }
-        &--right{
+
+        &--right {
             text-align: right;
         }
     }
-    &__border{
+
+    &__border {
         background-color: white;
         height: .05rem;
         width: 85%;
         margin: 0 auto;
+    }
+
+    &__menu {
+        &__icon {
+            position: relative;
+
+            &,
+            &::before,
+            &::after {
+                width: 1.6rem;
+                height: 0.2rem;
+                background-color: $color-light;
+                display: inline-block;
+            }
+
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+            }
+
+            &::before {
+                top: -0.5rem;
+            }
+
+            & {
+                top: -0.5rem;
+            }
+
+            &::after {
+                top: 0.5rem;
+            }
+        }
+
+        &__button {
+            cursor: pointer;
+        }
+
+        &__item{
+            list-style: none;
+        }
+
+        &__background{
+            position: relative;
+            background-color: red;
+            width: 100vh;
+            height: 100vh;
+            float: left;
+            z-index: 1000;
+            opacity: 0;
+            text-align: center;
+        }
     }
 }
