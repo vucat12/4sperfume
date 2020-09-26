@@ -15,6 +15,7 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
     <title>4SPerfume</title>
 </head>
 <body>
@@ -60,46 +61,71 @@
         </div>
         <div class="navigation__border"></div>
     </div>
-    <div id="header" class="container-fluid header">
+
+    <nav id="cd-vertical-nav">
+		<ul>
+			<li>
+				<a href="#header" data-number="1">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Intro</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section-about" data-number="2">
+					<span class="cd-dot"></span>
+					<span class="cd-label">About</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section-contact" data-number="3">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Features</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+
+    <div id="header" class="section container-fluid header">
         <div class="box">
-            <h2 class="heading-primary">
+            <h2 class="heading-primary" data-aos="fade-up" data-aos-duration="600">
                 4SPerfume
             </h2>
-            <a href="#" class="button button--big">
+            <a href="#" class="button button--big" data-aos="fade-up" data-aos-duration="600">
                 <span class="button__label">Submeter</span>
             </a>
         </div>
     </div>
-    <div id="section-about" class="section-about">
+    <div id="section-about" class="section section-about">
         <video class="video_background" preload="auto" autoplay="true" loop="loop" muted volume="0">
             <source src="./img/video.mp4" type="video/webm" />
         </video>
         <div class="box">
-            <h2 class="heading-primary">
+            <h2 class="heading-primary" data-aos="fade-up" data-aos-duration="600"> 
                 4SPerfume
             </h2>
-            <a href="#" class="button button--big">
+            <a href="#" class="button button--big" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
                 <span class="button__label">Submeter</span>
             </a>
         </div>
     </div>
-    <div id="section-contact" class="section-contact">
+    <div id="section-contact" class="section section-contact">
         <video class="video_background" preload="auto" autoplay="true" loop="loop" muted volume="0">
             <source src="./img/video.mp4" type="video/webm" />
         </video>
         <div class="box">
-            <h2 class="heading-primary">
+            <h2 class="heading-primary" data-aos="fade-up" data-aos-duration="600">
                 4SPerfume
             </h2>
-            <a href="#" class="button button--big">
+            <a href="#" class="button button--big" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
                 <span class="button__label">Submeter</span>
             </a>
         </div>
     </div>
-    <div id="section-introduce" class="section-introduce">
+    <div id="section-introduce" class="section section-introduce">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-4" data-aos="fade-right">
+                <div class="col-sm-4" data-aos="fade-right" data-aos-duration="600">
                     <div class="card-description">
                         <img class="card-description__img" src="./img/Capture.PNG" alt="rollRoyce">
                         <h4 class="card-description__title">4SPerfume</h4>
@@ -111,7 +137,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-4" data-aos="fade-up">
+                <div class="col-sm-4" data-aos="fade-up" data-aos-duration="600">
                     <div class="card-description">
                         <img class="card-description__img" src="./img/Capture.PNG" alt="rollRoyce">
                         <h4 class="card-description__title">4SPerfume</h4>
@@ -123,7 +149,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-sm-4" data-aos="fade-left">
+                <div class="col-sm-4" data-aos="fade-left" data-aos-duration="600">
                     <div class="card-description">
                         <img class="card-description__img" src="./img/Capture.PNG" alt="rollRoyce">
                         <h4 class="card-description__title">4SPerfume</h4>
@@ -167,6 +193,7 @@
   
 </body>
 <script src="./js/home.js"></script>
+<script src="js/main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
