@@ -1,5 +1,5 @@
 .navigation{
-    padding: 4rem 10rem !important;
+    padding: 0rem 10rem !important;
     font-size: 1.5rem;
     color: $color-light;
     text-transform: uppercase;
@@ -8,7 +8,14 @@
     margin: 0 auto;
     top: 0;
     width: 100%;
+    transform: translateY(50%);
     z-index: 100000;
+    a {
+        &:hover{
+            cursor: pointer;
+            opacity: .7;
+        }
+    }
     &__item{
         &--left{
             text-align: left;
@@ -25,5 +32,56 @@
         height: .05rem;
         width: 85%;
         margin: 0 auto;
+    }
+    &__logo{
+        transform: translateY(-30%);
+        width: 8rem;
+        height: 10rem;
+        margin: 0 auto;
+        display: block;
+        background-image: url("../../img/LogoWhite.png");
+        background-size: cover;
+    }
+}
+
+
+.navigation-scroll{
+    padding: 1rem 10rem !important;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $color-light;
+    text-transform: uppercase;
+    font-family: $font-general;
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    z-index: 100000;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 0%);
+    &__item{
+        transform: translateY(30%);
+        &--left{
+            text-align: left;
+        }
+        &--center{
+            text-align: center;
+        }
+        &--right{
+            text-align: right;
+        }
+    }
+    &__border{
+        height: 0rem;
+    }
+    &__logo{
+        transform: translateY(-30%);
+        height: 5rem;
+        margin: 0 auto;
+        display: block;
+        background-image: url("../../img/LogoScroll.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-align: center;
+        background-position: center;
     }
 }

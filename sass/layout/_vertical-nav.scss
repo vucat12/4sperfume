@@ -27,13 +27,9 @@ Main components
     position: fixed;
     z-index: 100000;
     left: 30px;
-    // mixin center y
     top: 50%;
     bottom: auto;
     transform: translateY(-50%);
-    // @include center(y);
-    
-    //end mixin center y
 
 	li {
 		text-align: left;
@@ -41,7 +37,6 @@ Main components
 
 	a {
 		display: inline-block;
-        //@include clearfix;
         &::after {
             clear: both;
             content: "";
@@ -51,18 +46,15 @@ Main components
         /* prevent weird movements on hover when you use a CSS3 transformation - webkit browsers */
         -webkit-backface-visibility: hidden; /* Safari */
         backface-visibility: hidden;
-		//@include backface-visibility(hidden);
 		
 		span {
 			float: left;
             display: inline-block;
             transform: scale(.6);
-			//@include transform(scale(.6));
 		}
 
 		&:hover span {
             transform: scale(1);
-			//@include transform(scale(1)); 
 		}
 
 		&:hover .cd-label {
@@ -70,7 +62,7 @@ Main components
 		}
 
 		&.is-selected .cd-dot {
-			background-color: $color-4;
+			background-color: $color-light;
 		}
 	} 
 
@@ -78,32 +70,29 @@ Main components
 		position: relative;
 		/* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
 		top: 8px;
-		height: 12px;
-		width: 12px;
+		height: 1.5rem;
+		width: 1.5rem;
 		border-radius: 50%;
-		background-color: $color-3;
+		background-color: $color-dark;
 		-webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
 		-moz-transition: -moz-transform 0.2s, background-color 0.5s;
         transition: transform 0.2s, background-color 0.5s;
 		transform-origin: 50% 50%;
 		cursor: pointer;
-		//@include transform-origin(50% 50%);	
 	}
 
 	.cd-label {
 		position: relative;
 		margin-right: 10px;
 		padding: .4em .5em;
-        color: $color-4;
+        color: $color-light;
         font-size: 1.4rem;
-		//@include font-size(14px);
 
 		-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
 		-moz-transition: -moz-transform 0.2s, opacity 0.2s;
 		transition: transform 0.2s, opacity 0.2s;
         opacity: 0;
         transform-origin: 100% 50%;
-		//@include transform-origin(100% 50%);
 	}
 }
 
@@ -120,14 +109,13 @@ Main components
 	height: 44px;
     width: 44px;
     border-radius: .25em;
-	//@include border-radius;
-	background: rgba($color-4, .9);
+	background: rgba($color-light, .9);
 
 	span {
 		position: absolute;
 		height: 4px;
 		width: 4px;
-		background-color: $color-1;
+		background-color: $color-black;
         border-radius: 50%;
         left: 50%;
         top: 50%;
@@ -135,7 +123,6 @@ Main components
         right: auto;
         transform: translateX(-50%);
         transform: translateY(-50%);
-		//@include center;
 
 		&::before, &::after {
 			content: '';
@@ -171,19 +158,19 @@ Main components
     transform: scale(0);
     transition: transform .2s;
     border-radius: .25em;
-	background-color: rgba($color-4, .9);
+	background-color: rgba($color-light, .9);
 
 	a {
 		display: block;
 		padding: 1em;
-		border-bottom: 1px solid rgba($color-1, .1);
+		border-bottom: 1px solid rgba($color-black, .1);
 
 		span:first-child {
 			display: none;
 		}
 
 		&.is-selected span:last-child {
-			color: $color-3;
+			color: $color-dark;
 		}
 	}
 	
@@ -195,11 +182,11 @@ Main components
 		background-color: transparent;
 		
 		span {
-			background-color: rgba($color-1, 0);	
+			background-color: rgba($color-black, 0);	
 		}
 
 		span::before, span::after {
-			background-color: rgba($color-1, 1);
+			background-color: rgba($color-black, 1);
 			height: 3px;
 			width: 20px;
 			border-radius: 0;
