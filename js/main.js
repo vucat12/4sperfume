@@ -2,10 +2,10 @@ $(document).ready(function($){
 	var contentSections = $('.section'),
 		navigationItems = $('#cd-vertical-nav a');
 
-	updateNavigation();
-	$(window).on('scroll', function(){
-		updateNavigation();
-	});
+	// updateNavigation();
+	// $(window).on('scroll', function(){
+	// 	updateNavigation();
+	// });
 
 	//smooth scroll to the section
 	navigationItems.on('click', function(event){
@@ -43,7 +43,7 @@ $(document).ready(function($){
 	function smoothScroll(target) {
         $('body,html').animate(
         	{'scrollTop':target.offset().top},
-        	400
+        	1000
         );
 	}
 });

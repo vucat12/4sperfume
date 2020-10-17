@@ -1,17 +1,24 @@
-.navigation {
-    padding: 4rem 10rem !important;
+.navigation{
+    padding: 0rem 10rem !important;
     font-size: 1.5rem;
-    color: $color-light;
     text-transform: uppercase;
     font-family: $font-general;
     position: fixed;
     margin: 0 auto;
     top: 0;
     width: 100%;
+    transform: translateY(50%);
     z-index: 100000;
-
-    &__item {
-        &--left {
+    a {
+        color: $color-light !important;
+        &:hover{
+            cursor: pointer;
+            opacity: .7;
+            text-decoration: none;
+        }
+    }
+    &__item{
+        &--left{
             text-align: left;
         }
 
@@ -30,57 +37,64 @@
         width: 85%;
         margin: 0 auto;
     }
+    &__logo{
+        transform: translateY(-30%);
+        width: 8rem;
+        height: 10rem;
+        margin: 0 auto;
+        display: block;
+        background-image: url("../../img/LogoWhite.png");
+        background-size: cover;
+    }
+}
 
-    &__menu {
-        &__icon {
-            position: relative;
 
-            &,
-            &::before,
-            &::after {
-                width: 1.6rem;
-                height: 0.2rem;
-                background-color: $color-light;
-                display: inline-block;
-            }
-
-            &::before,
-            &::after {
-                content: "";
-                position: absolute;
-                left: 0;
-            }
-
-            &::before {
-                top: -0.5rem;
-            }
-
-            & {
-                top: -0.5rem;
-            }
-
-            &::after {
-                top: 0.5rem;
-            }
-        }
-
-        &__button {
+.navigation-scroll{
+    padding: 1rem 10rem !important;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: $color-light;
+    text-transform: uppercase;
+    font-family: $font-general;
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    overflow: hidden;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 0%);
+    a {
+        color: $color-light !important;
+        &:hover{
             cursor: pointer;
+            opacity: .7;
+            text-decoration: none;
         }
-
-        &__item{
-            list-style: none;
+    }
+    &__item{
+        transform: translateY(30%);
+        &--left{
+            text-align: left;
         }
-
-        &__background{
-            position: relative;
-            background-color: red;
-            width: 100vh;
-            height: 100vh;
-            float: left;
-            z-index: 1000;
-            opacity: 0;
+        &--center{
             text-align: center;
         }
+        &--right{
+            text-align: right;
+        }
+    }
+    &__border{
+        height: 0rem;
+    }
+    &__logo{
+        transform: translateY(-30%);
+        height: 5rem;
+        margin: 0 auto;
+        display: block;
+        background-image: url("../../img/LogoScroll.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        text-align: center;
+        background-position: center;
     }
 }

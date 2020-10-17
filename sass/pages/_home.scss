@@ -1,18 +1,36 @@
 .section-about {
+    background-image: url("../../img/104368672_599203777375105_7326708956631253840_n.jpg");
+    height: 100vh;
+    top: 0px;
+    left: 0px;
+    display: block;
     position: relative;
     height: 100vh;
-    scroll-snap-align: start;
+   // scroll-snap-align: start;
     text-align: center;
     position: relative;
-    z-index: 100;
+    z-index: 1000;   
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
 }
 
 .section-contact {
+    background-image: url("../../img/104657226_261604684935106_6184112725521344746_n.jpg");
+    display: block;
     position: relative;
     height: 100vh;
-    scroll-snap-align: start;
+   // scroll-snap-align: start;
     text-align: center;
     position: relative;
+    z-index: 1000;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
 }
 
 
@@ -26,6 +44,47 @@
         margin: 4.6rem auto 0;
         text-align: center;
     }
-    scroll-snap-align: start;
-    padding: 5% 0;
+   // scroll-snap-align: start;
+    padding: 7% 0;
+}
+
+@media only screen and (max-width: 1025px){
+    .myVideo{
+        transform: scale(6);
+        background-position: center center;
+        background-size: cover;
+    }
+}
+@media only screen and (max-height: 813px) 
+{
+    .myVideo{
+        transform: scale(8);
+    }
+}
+@media only screen and (max-width: 415px) 
+{ 
+    .navigation, .navigation-scroll{
+        width: 38rem;
+        height: 9%;
+        font-size: 1.5rem;
+        padding: 0 1.5rem !important; 
+        &__item{
+            &--left{
+            }
+
+            &--center{
+            }
+
+            &--right{
+                
+            }
+        }
+
+        &__logo{
+        }
+    }
+    .heading-primary{
+        font-size: 4rem;
+    }
+
 }
